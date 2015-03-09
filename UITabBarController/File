@@ -1,0 +1,11 @@
+demo功能描述：
+备注：*后面的类，表示实现对应功能的类。
+
+1、tabBar的自定义与半自定义；
+*MyTaBarVC；
+
+2、tabBar的隐藏问题：在UINavigationController调用push方法时，在UIViewController中隐藏；
+*MyNavgationVC；
+
+3、UITabBarController中视图控制器间的切换：
+*类Item2ViewController；
