@@ -40,7 +40,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _titleItems = @[@"理财",@"新闻",@"账户",@"更多"];
+    _titleItems = @[@"首页",@"资讯",@"账户",@"设置"];
     
 //    [self systemTabBar];
     
@@ -52,7 +52,7 @@
 //半自定义有bug：未选中时，背景是灰色。
 - (void)systemTabBar
 {
-    NSArray * items = @[@"理财",@"新闻",@"账户",@"更多"];
+    NSArray * items = _titleItems;
     
     NSMutableArray *vcArr = [NSMutableArray array];
     for (int i = 0; i<4; i++)
@@ -105,7 +105,7 @@
 - (NSArray *)getViewControllers
 {
     //viewControllers
-    NSArray * items = @[@"理财",@"新闻",@"账户",@"更多"];
+    NSArray * items = _titleItems;
     NSMutableArray *vcArr = [NSMutableArray array];
     for (int i = 0; i < items.count; i++)
     {
@@ -139,7 +139,7 @@
 - (void)initCustomTabBar
 {
     //tabBar
-    NSArray * items = @[@"理财",@"新闻",@"账户",@"更多"];
+    NSArray * items = _titleItems;
 
     bgView = [[UIImageView alloc] init];
     bgView.frame = CGRectMake(0, 0, kScreenWidth, kTabbarHeight);
